@@ -1,17 +1,17 @@
 package agentes;
 
 import jade.core.Agent;
-import jade.core.behaviours.*;
+import jade.core.behaviours.Behaviour;
 
-public class Agente extends Agent {
+public class Ejercicio1 extends Agent {
     protected void setup() {
-        addBehaviour(new comportamiento(this));
+        addBehaviour(new comportamiento1(this));
     }
 }
 
-class comportamiento extends SimpleBehaviour {
-    public comportamiento(Agent a) {
-        super(a);
+class comportamiento1 extends Behaviour {
+    public comportamiento1(Agent agente) {
+        super(agente);
     }
 
     public void action() {
